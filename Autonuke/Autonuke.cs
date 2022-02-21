@@ -66,7 +66,7 @@ namespace Autonuke
 
 		internal void OnRoundRestart()
 		{
-			Timing.KillCoroutines(coroutine);
+			Timing.KillCoroutines(new CoroutineHandle[] { coroutine });
 			isAutoNukeGoingOff = false;
 		}
 
